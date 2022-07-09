@@ -1,0 +1,112 @@
+/** @format */
+
+.showcase {
+  height: 50vh;
+  width: 100%;
+}
+
+.showcase__img {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  /* margin-bottom: -200px; */
+  background-image: url();
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  background-position: center;
+}
+
+.showcase__text {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 20px;
+  color: #ccc;
+  z-index: 2;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+
+.showcase__blend {
+  background-color: black;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 1));
+  height: 200%;
+  /* z-index: 1; */
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 5px 55px 250px 10px inset rgba(0, 0, 0, 1);
+}
+
+.grid__container {
+  background: rgba(0, 0, 0, 1);
+  padding: 2rem 0;
+  position: relative;
+}
+
+.link__container {
+  padding-right: 2rem;
+  position: relative;
+}
+
+.product__links {
+  display: flex;
+  color: #aaa;
+  margin: 0 auto;
+  width: 90%;
+  margin-bottom: 2rem;
+  overflow: scroll;
+}
+
+.product__links > a {
+  margin-right: 1rem;
+  font-size: 0.75rem;
+  cursor: pointer;
+  flex: 0 0 auto;
+  min-width: 30px;
+}
+
+.active {
+  /* transform: scale(1.3); */
+  color: white;
+  /* background-color: red; */
+}
+
+.grid__images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 0 5vw;
+  justify-content: center;
+}
+
+.grid__card {
+  margin: 0 !important;
+}
+
+.active__Link {
+  color: aliceblue;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -50%);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.cheveron__right {
+  color: white;
+  position: absolute;
+  right: .5rem;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.add {
+  transition: all 0.5s ease;
+  opacity: 1;
+}

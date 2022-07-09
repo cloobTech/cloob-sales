@@ -1,0 +1,94 @@
+/** @format */
+
+.container > h3,
+.title {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.title {
+  color: #aaa;
+  font-size: 0.75rem;
+}
+.Shipping__row {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem auto;
+  /* border: 2px solid red; */
+  width: 90vw;
+  border-radius: 0.25rem;
+  align-items: center;
+  height: 50px;
+  font-size: 0.75rem;
+  padding: 0 0.5rem;
+  max-width: 500px;
+}
+
+.Shipping__row > .input {
+  display: flex;
+  align-items: center;
+}
+
+.Shipping__row > .input > label {
+  margin-left: 0.5rem;
+}
+
+.company__logo {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.dhl {
+  background: rgba(255, 204, 0, 0.5);
+  color: #d40511;
+  /* border: 2px solid ; */
+  font-weight: 600;
+}
+
+.amazon {
+  background: rgba(255, 153, 0, 0.5);
+  color: black;
+  font-weight: 600;
+}
+
+.uber {
+  background: rgba(0, 0, 0, 0.9);
+  color: white;
+  font-weight: 600;
+}
+
+.ali {
+  background: rgba(227, 54, 12, 1);
+  color: rgb(247, 153, 23);
+  font-weight: 600;
+}
+
+.btn__container {
+  margin: 0.75rem auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 500px;
+}
+
+.btn__container > a > div {
+  display: flex;
+  color: black;
+  font-size: 0.75rem;
+}
+
+.btn__container > a > div > span {
+  margin-right: 0.25rem;
+}
+
+.btn__container > a > div > button {
+  padding: 0.5rem 2rem;
+  background: rgba(0, 0, 0, 0.9);
+  color: #f3f3f3;
+  border: none;
+  letter-spacing: 1px;
+  outline: none;
+  cursor: pointer;
+}

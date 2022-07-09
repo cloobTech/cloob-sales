@@ -1,0 +1,59 @@
+/** @format */
+
+.container {
+  /* padding: 2rem; */
+  min-height: 100vh;
+}
+
+h3 {
+  margin-top: 2rem;
+  margin-left: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.nav__container {
+  display: flex;
+  align-items: center;
+  font-size: 0.75rem;
+  /* min-height: 300px; */
+}
+
+.nav__link {
+  color: #aaa;
+  padding: 0.5rem 1rem;
+  transition: all 1s ease;
+}
+
+.active {
+  padding: 0.25rem 0.75rem;
+  /* background-color: white; */
+  border-radius: 0.25rem;
+  transform: scale(1.2);
+  margin: 0.25rem 0.75rem;
+}
+
+.active button {
+  font-weight: 700;
+  color: black !important;
+}
+
+.nav__container button[disabled] {
+  outline: none;
+  background: transparent;
+  border: none;
+}
+
+@media screen and (max-width: 360px) {
+  .nav__container {
+    font-size: 0.7rem;
+  }
+
+  .active {
+    transform: scale(1);
+    margin: 0.25rem 0.5rem;
+  }
+
+  .nav__link {
+    padding: 0.25rem 0.5rem;
+  }
+}

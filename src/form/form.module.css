@@ -1,0 +1,21 @@
+/** @format */
+
+.form__control {
+  width: 100%;
+}
+
+.form__control > label {
+  color: #333;
+  font-size: 0.75rem;
+}
+
+.form__control > input {
+  padding: 0.5rem 0.25rem;
+  border: 1px solid #aaa;
+  outline: none;
+  border-radius: 0.25rem;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+

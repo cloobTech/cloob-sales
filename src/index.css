@@ -1,13 +1,220 @@
-body {
+/** @format */
+
+*,
+*::after,
+*::before {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --primaryColor: #4e95e6;
+  --secondaryColor: rgb(226, 67, 101);
+  --light: #fafafa;
+}
+
+html {
+  background-color: #f3f3f3;
+  -ms-overflow-style: none;
+  scrollbar-width: 0;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: #f3f3f3;
+}
+
+.blend {
+  position: absolute;
+  bottom: 0;
+  height: 30vh;
+  width: 100%;
+  background: transparent;
+  background-image: linear-gradient(
+    180deg,
+    transparent,
+    rgba(243, 243, 243, 0.1),
+    rgba(243, 243, 243, 0.2),
+    rgba(243, 243, 243, 0.3),
+    rgba(243, 243, 243, 0.4),
+    rgba(243, 243, 243, 0.5),
+    rgba(243, 243, 243, 0.6),
+    rgba(243, 243, 243, 0.7),
+    rgba(243, 243, 243, 0.8),
+    rgba(243, 243, 243, 0.9),
+    rgba(243, 243, 243, 1)
+  );
+}
+
+.error__message {
+  color: rgb(242, 22, 22);
+  font-size: 0.75rem;
+  margin-top: -0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.product__card {
+  height: 200px;
+  width: 40vw;
+  background: #fafafa;
+  box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.2);
+  border-radius: 0.25rem;
+  flex: 0 0 auto;
+  margin-left: 0.5rem;
+  padding: 1rem 0.5rem 2rem 0.5rem;
+  position: relative;
+  text-align: center;
+}
+
+.product__card::before {
+  content: "";
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  transform: scale(0);
+  transition: all 1s ease;
+}
+
+.product__card:hover::before {
+  transform: scale(1);
+}
+
+.product__card__image {
+  height: 60%;
+  /* background-color: #ccc; */
+  border-radius: 0.15rem 0.15rem 0 0;
+  /* object-fit: contain; */
+  display: flex;
+  justify-content: center;
+}
+
+.product__card__image > img {
+  max-width: 90%;
+}
+
+.product__card__title {
+  font-weight: 600;
+  margin: 0.5rem 0 0 0;
+}
+
+.product__card__rating {
+  font-size: 0.5rem;
+}
+
+.product__card__price {
+  font-weight: 600;
+  font-size: 0.75rem;
+  margin-top: 0.25rem;
+  color: var(--secondaryColor);
+}
+
+.product__card__btn {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-bottom: 0.5rem;
+  padding: 0 0.5rem;
+  cursor: pointer;
+}
+
+.product__card__btn > button {
+  width: 100%;
+  font-weight: 600;
+  margin: 0 auto;
+  cursor: pointer;
+  padding: 0.25rem 0;
+  border: none;
+  outline: none;
+  background-color: var(--primaryColor);
+  border-radius: 0.15rem;
+  color: white;
+}
+
+.advertisement {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 150px;
+  /* background-color: black; */
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.advertisement > div > img {
+  object-fit: cover;
+  width: 100%;
+
+  height: 100%;
+}
+
+.advertisement__text {
+  position: absolute;
+  color: #fff;
+  top: 50%;
+  left: 20px;
+  max-width: 60%;
+  font-weight: 700;
+  transform: translateY(-50%);
+}
+
+.advertisement__big__text {
+  color: var(--secondaryColor);
+  font-size: min(5vw, 3rem);
+}
+
+.advertisement__big__text > span {
+  color: #eee;
+  font-size: min(7vw, 5rem);
+}
+
+.advertisement__small__text {
+  color: #ccc;
+  font-size: min(3vw, 2.5rem);
+  margin-top: 0.5rem;
+}
+
+a:active {
+  background: rgba(243, 243, 243, 0.9);
+  transition: all 0.5s ease;
+}
+button:active {
+  background: rgba(243, 243, 243, 0.9);
+  transition: all 0.5s ease;
+}
+
+@media screen and (min-width: 800px) {
+  .product__card {
+    width: auto;
+    height: 320px;
+  }
+
+  .product__card__image {
+    height: 70%;
+  }
+
+  .product__card__title {
+    margin-top: 1rem;
+  }
+
+  .product__card__btn > button {
+    padding: 0.5rem 0;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  .advertisement {
+    grid-template-rows: 300px;
+  }
 }

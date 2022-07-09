@@ -1,0 +1,43 @@
+/** @format */
+
+.thankyou {
+  width: 80vw;
+  margin: 2rem auto;
+  max-width: 500px;
+  min-height: 300px;
+  background: white;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+  border-radius: 0.25rem;
+  padding: 1rem;
+  position: relative;
+
+}
+
+.thankyou > div {
+  margin: 1rem 0 0 0;
+  color: #aaa;
+}
+
+.thankyou > p {
+  color: #aaa;
+  margin-top: 0.25rem;
+}
+
+.btn {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.thankyou .btn > button {
+  width: 90%;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  border: none;
+  outline: none;
+  background-color: var(--primaryColor);
+  color: white;
+}

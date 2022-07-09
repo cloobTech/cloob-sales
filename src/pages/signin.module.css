@@ -1,0 +1,46 @@
+/** @format */
+
+.signin {
+  background: rgba(0, 0, 0, 0.85);
+  /* display: flex; */
+  min-height: calc(100vh - 2rem);
+  color: white;
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.form__container {
+  width: 80vw;
+  margin: auto;
+  max-width: 500px;
+}
+
+.form__title{
+  text-align: center;
+}
+
+.form__btn > button {
+  width: 100%;
+  padding: 0.75rem;
+  font-weight: 700;
+  border: none;
+  outline: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  background: var(--primaryColor);
+  color: white;
+}
+
+.create__acc {
+  font-size: 0.75rem;
+  width: 100%;
+  text-align: left;
+  margin-top: 0.5rem;
+}
+
+.create__acc > span {
+  color: blue;
+}
+
+.signin span {
+  cursor: pointer;
+}
